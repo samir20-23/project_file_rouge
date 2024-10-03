@@ -1,0 +1,23 @@
+@startuml Diagram
+actor Customer
+actor Technician
+
+
+rectangle "chooop" {
+
+    Customer --> ( Login)
+    Customer --> (Fill Service Request Form)
+    Customer --> (Add Car Problem Description)
+    Customer --> (Select Service Type)
+    Customer --> (Submit Request)
+    Customer --> (Receive Confirmation)
+    Customer --> (Rate and Review Service)
+
+    Technician --> (Receive Service Request)
+    Technician --> (View Customer Location)
+    Technician --> (Confirm or Edit Estimated Price)
+    Technician --> (Track Service Requests)
+    Technician --> (Send Notifications)
+}
+
+@enduml
